@@ -1,0 +1,124 @@
+.backend {
+  margin-top: 20px;
+}
+
+.backend1 {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.backend1 p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+  /* width: 97%; */
+  margin: auto;
+}
+
+.backend3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.backend3 button:nth-child(1) {
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 42px 12px 42px;
+  outline: none;
+  background-color: #2155cd;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.backend3 button:nth-child(2) {
+  width: auto;
+  height: auto;
+  border: 1px solid #2155cd;
+  border-radius: 4px;
+  padding: 12px 42px 12px 42px;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2155cd;
+  margin: 0;
+}
+.backend4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.backend4 button {
+  width: auto;
+  height: auto;
+  border: 1px solid #2155cd;
+  border-radius: 4px;
+  padding: 4px 16px 4px 16px;
+  outline: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2155cd;
+  margin: 0;
+}
+
+.backend2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+
+.backend5 button {
+  width: 100px;
+  height: 34px;
+  background-color: #2155cd;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+
+/* Responsive css for backend  */
+
+
+@media screen and (max-width: 580px) {
+    .backend3 button:nth-child(1){
+        padding: 12px 15px 12px 15px;
+    }
+  
+    .backend3 button:nth-child(2){
+        padding: 12px 15px 12px 15px;
+    }
+  
+    .backend2{
+        gap: 10px;
+        margin-top: 10px;
+    }
+  }

@@ -1,0 +1,48 @@
+/* HOC.css */
+
+.container1 {
+  height: 100%; 
+  background-color: #f0f0f0;
+  padding-bottom: 200px;
+}
+
+.hocnavbar {
+  width: 100%;
+}
+
+.hoccontainer {
+  display: flex;
+}
+
+.hocsidebar {
+  width: auto;
+}
+
+.child-component {
+  flex: 1;
+  padding: 20px;
+  width: 75%;
+  /* width: 100%; */
+}
+
+
+
+/* Media query for small screens */
+
+@media screen and (max-width: 968px) {
+  .container1 {
+    height: 100%;
+    min-height: 100vh; 
+  }
+  .hoccontainer {
+    flex-direction: column; 
+  }
+
+  .hocsidebar {
+    display: none; 
+  }
+
+  .child-component {
+    width: 100%; 
+  }
+}
