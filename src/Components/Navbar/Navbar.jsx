@@ -441,7 +441,7 @@ const Navbar = () => {
                 </div>
                 <div className='navbar-right'>
                     <div class='navbar2'>
-                        <button onClick={() => navigate('/paymentnow')}>Log Out</button>
+                        <button onClick={() => navigate('/')}>Log Out</button>
                     </div>
                     <div class='profile-img1' onClick={() => setModalShow2(true)}>
                         <img src={img1} alt="" />

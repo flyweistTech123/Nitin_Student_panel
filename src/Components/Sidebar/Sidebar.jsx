@@ -1,23 +1,8 @@
 import React, { useState } from 'react';
 import './Sidebar.css'
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import Offcanvas from 'react-bootstrap/Offcanvas';
-
 
 import img from '../../Img/img6.png'
-import img1 from '../../Img/img7.png'
-import img2 from '../../Img/img16.png'
-import img3 from '../../Img/img8.png'
-import img4 from '../../Img/img9.png'
-import img5 from '../../Img/img10.png'
-import img6 from '../../Img/img11.png'
-import img7 from '../../Img/img12.png'
-import img8 from '../../Img/img13.png'
-import img9 from '../../Img/img14.png'
-import img10 from '../../Img/img15.png'
-import img11 from '../../Img/img17.png'
-import img12 from '../../Img/img18.png'
-import img13 from '../../Img/img19.png'
 import { Link } from 'react-router-dom';
 import { FaWpforms } from "react-icons/fa6";
 import { MdAccountBalance } from "react-icons/md";
@@ -108,7 +93,7 @@ const Sidebar = () => {
                         {expandedMenus.includes(0) && (
                             <div className='subMenu'>
                                 <ul>
-                                    <Link to={'/admission'} className='link'>
+                                    <Link to={'/payfees'} className='link'>
                                         <li>Pay Fees</li>
                                     </Link>
                                     <Link to={'/backend'} className='link'>
@@ -413,19 +398,19 @@ const Sidebar = () => {
                                 </ul>
                             </div>
                         )} */}
-                        <Link to={'/couriersection'} className='link'>
+                        <Link to={'/referenceformdata'} className='link'>
                             <div className='sidebar2'>
                                 <VscReferences color='#3F3F3F' size={18} />
                                 <p>Reference Form</p>
                             </div>
                         </Link>
-                        <Link to={'/referenceformdata'} className='link'>
+                        <Link to={'/studentrequest'} className='link'>
                             <div className='sidebar2'>
                                 <PiStudentBold color='#3F3F3F' size={18} />
                                 <p>Student Request</p>
                             </div>
                         </Link>
-                        <Link to={'/pettycashpayment'} className='link'>
+                        <Link to={'/studentcomplaint'} className='link'>
                             <div className='sidebar2'>
                                 <PiStudentBold color='#3F3F3F' size={18} />
                                 <p>Student Complaint</p>

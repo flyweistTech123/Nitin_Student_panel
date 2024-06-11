@@ -131,6 +131,10 @@ import TelegramEdit from './Pages/EditProfile/TelegramEdit';
 import EmailTemplateEdit from './Pages/EditProfile/EmailTemplateEdit';
 import ZoomEdit from './Pages/EditProfile/ZoomEdit';
 import MeetingEdit from './Pages/EditProfile/MeetingEdit';
+import PayFees from './Pages/Pay Fees/PayFees';
+import PayFeePayment from './Pages/Pay Fees/PayFeePayment';
+import StudentRequest from './Pages/Student Request/StudentRequest';
+import StudentComplaint from './Pages/Student Complaint/StudentComplaint';
 // import Whatsappsection from './Pages/WHATSAPP/Whatsappsection';
 
 function App() {
@@ -269,6 +273,10 @@ function App() {
           <Route path="/emailtemplateedit" element={<EmailTemplateEdit />} />
           <Route path="/zoomedit" element={<ZoomEdit />} />
           <Route path="/meetingedit" element={<MeetingEdit />} />
+          <Route path="/payfees" element={<PayFees />} />
+          <Route path="/payfeepayment" element={<PayFeePayment />} />
+          <Route path="/studentrequest" element={<StudentRequest />} />
+          <Route path="/studentcomplaint" element={<StudentComplaint />} />
         </Routes>
       </BrowserRouter>
     </>
