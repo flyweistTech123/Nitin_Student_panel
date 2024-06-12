@@ -135,6 +135,7 @@ import PayFees from './Pages/Pay Fees/PayFees';
 import PayFeePayment from './Pages/Pay Fees/PayFeePayment';
 import StudentRequest from './Pages/Student Request/StudentRequest';
 import StudentComplaint from './Pages/Student Complaint/StudentComplaint';
+import Books from './Pages/Books/Books';
 // import Whatsappsection from './Pages/WHATSAPP/Whatsappsection';
 
 function App() {
@@ -277,6 +278,7 @@ function App() {
           <Route path="/payfeepayment" element={<PayFeePayment />} />
           <Route path="/studentrequest" element={<StudentRequest />} />
           <Route path="/studentcomplaint" element={<StudentComplaint />} />
+          <Route path="/books" element={<Books />} />
         </Routes>
       </BrowserRouter>
     </>
