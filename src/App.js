@@ -3,139 +3,146 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
-import Dashboard from './Pages/Dashboard/Dashboard';
-import Admission from './Pages/Admission/Admission';
-import Service from './Pages/Service/Service';
-import Backend from './Pages/Backend/Backend';
-import PendingOnlinePayments from './Pages/Pending Online Payments/PendingOnlinePayments';
-import PaymentReceived from './Pages/Payment Received/PaymentReceived';
-import RefundCancel from './Pages/RefundCancel/RefundCancel';
-import PDCSection from './Pages/PDC Section/PDCSection';
-import ExamAttendanceStatus from './Pages/Exam Attendance Status/ExamAttendanceStatus';
-import Results from './Pages/Results/Results';
-import Template from './Pages/Template/Template';
-import TelegramTemplate from './Pages/Template/TelegramTemplate';
-import EmailTemplate from './Pages/Template/EmailTemplate';
-import SMSTemplate from './Pages/Template/SMSTemplate';
-import WatiTemplate from './Pages/Template/Whatsapp Template/WatiTemplate';
-import InteraktTemplate from './Pages/Template/Whatsapp Template/InteraktTemplate';
-import Automation from './Pages/Automation Logs/Automation';
-import TelegramAutomation from './Pages/Automation Logs/TelegramAutomation';
-import EmailAutomation from './Pages/Automation Logs/EmailAutomation';
-import InteraktAutomation from './Pages/Automation Logs/InteraktAutomation';
-import MeetingAutomation from './Pages/Automation Logs/MeetingAutomation';
-import SMSAutomation from './Pages/Automation Logs/SMSAutomation';
-import WatiAutomation from './Pages/Automation Logs/WatiAutomation';
-import ZoomAutomation from './Pages/Automation Logs/ZoomAutomation';
-import ITReport from './Pages/IT Report/ITReport';
-import ITTargetReport from './Pages/IT Target Report/ITTargetReport';
-import ITTargetAnalysis from './Pages/IT Target Analysis/ITTargetAnalysis';
-import CallRecordingAnalysis from './Pages/Call Recording Analysis/CallRecordingAnalysis';
-import SalesTarget from './Pages/Sales Target/SalesTarget';
-import CRM from './Pages/CRM/CRM';
-import Employees from './Pages/Employees/Employees';
-import University from './Pages/Setting/University';
-import Courses from './Pages/Setting/Courses';
-import Specialization from './Pages/Setting/Specialization';
-import Subject from './Pages/Setting/Subject';
-import BankAccount from './Pages/Setting/BankAccount';
-import StudyMedium from './Pages/Setting/StudyMedium';
-import CoursefeesStructure from './Pages/Setting/CoursefeesStructure';
-import AutoBackup from './Pages/Setting/AutoBackup';
-import PDCFollowUpStatus from './Pages/Setting/PDCFollowUpStatus';
-import ExpenseType from './Pages/Setting/ExpenseType';
-import IdleTime from './Pages/Setting/IdleTime';
-import PendingdocumentList from './Pages/Setting/PendingdocumentList';
-import CourierSection from './Pages/Setting/CourierSection';
-import StudentRequestType from './Pages/Setting/StudentRequestType';
-import StudentComplaintType from './Pages/Setting/StudentComplaintType';
-import AdmissionConfirmStatus from './Pages/Setting/AdmissionConfirmStatus';
-import LogInHistory from './Pages/Log In History/LogInHistory';
-import Attendee from './Pages/Attendees/Attendee';
-import Expense from './Pages/Expense/Expense';
-import PettyCashPayment from './Pages/PettyCash Payment/PettyCashPayment';
-import Whatsapp from './Pages/WHATSAPP/Whatsapp';
-import Telegram from './Pages/Telegram/Telegram';
-import VoiceCall from './Pages/Voice Call/VoiceCall';
-import Zoommeeting from './Pages/Zoom meeting Page/Zoommeeting';
-import Email from './Pages/Email Page/Email';
-import Documents from './Pages/Documents/Documents';
-import DailyReportTemplate from './Pages/Daily Report Template/DailyReportTemplate';
-import CallRecordingStorage from './Pages/Call Recording Storage/CallRecordingStorage';
-import ITReportingTemplate from './Pages/IT Reporting Template/ITReportingTemplate';
-import CompanyStructure from './Pages/Company Structure/CompanyStructure';
-import PermissionAccess from './Pages/Permission Access/PermissionAccess';
-import AccessPermission from './Pages/Permission Access/AccessPermission';
-import ManagePermissionAccess from './Pages/Permission Access/ManagePermissionAccess';
-import ReferenceFormData from './Pages/Reference Form Data/ReferenceFormData';
-import BirthdayWishes from './Pages/Setting/BirthdayWishes';
-import WorkAnniversory from './Pages/Setting/WorkAnniversory';
-import TelegramAPI from './Pages/Setting/TelegramAPI';
-import EasebuzzAPI from './Pages/Setting/EasebuzzAPI';
-import CCAvenueAPI from './Pages/Setting/CCAvenueAPI';
-import PaytmGateway from './Pages/Setting/PaytmGateway';
-import Keka from './Pages/Setting/Keka';
-import WatiApi from './Pages/Setting/WatiApi';
-import InterktAPI from './Pages/Setting/InterktAPI';
-import KIT19 from './Pages/Setting/KIT19';
-import PettyCashTemplate from './Pages/Setting/PettyCashTemplate';
-import CourierSectionTemplate from './Pages/Setting/CourierSectionTemplate';
-import Waticouriersectiontemplate from './Pages/Setting/Waticouriersectiontemplate';
-import Intakeouriersectiontemplate from './Pages/Setting/Intakeouriersectiontemplate';
-import PendingDocumentListTemplate from './Pages/Setting/PendingDocumentListTemplate';
-import SettingEmailTemplate from './Pages/Setting/SettingEmailTemplate';
-import FONADAAPI from './Pages/Setting/FONADAAPI';
-import ERPSettings from './Pages/Setting/ERPSettings';
-import PaymentTypeMode from './Pages/Setting/PaymentTypeMode';
-import ForInternalpayment from './Pages/Setting/ForInternalpayment';
-import ForPublicPayment from './Pages/Setting/ForPublicPayment';
-import CallyzerAPI from './Pages/Setting/CallyzerAPI';
-import FeeReceiptFormat from './Pages/Setting/FeeReceiptFormat';
-import StudentEditTemplate from './Pages/Setting/StudentEditTemplate';
-import InternalEditTemplate from './Pages/Setting/InternalEditTemplate';
-import SettingEditEmailTemplate from './Pages/Setting/SettingEditEmailTemplate';
-import PaymentNow from './Pages/PaymentNow/PaymentNow';
-import PaymentDeteails from './Pages/PaymentNow/PaymentDeteails';
-import EasebuzzPayment from './Pages/PaymentNow/EasebuzzPayment';
-import General from './Pages/General/General';
-import Task from './Pages/Task/Task';
-import Calender from './Pages/Calender/Calender';
-import Drive from './Pages/Drive/Drive';
-import WorkReport from './Pages/Work Report/WorkReport';
-import Admission_Details from './Pages/EditProfile/Admission_Details';
-import Payment_section_Editprofile from './Pages/EditProfile/Payment_section_Editprofile';
-import Personal_Details from './Pages/EditProfile/Personal_Details';
-import Contact_Details from './Pages/EditProfile/Contact_Details';
-import Guardian_Details from './Pages/EditProfile/Guardian_Details';
-import Certificate from './Pages/EditProfile/Certificate';
-import Education_Details from './Pages/EditProfile/Education_Details';
-import Automatic2FeeStructure from './Pages/EditProfile/Automatic2Fee _Structure';
-import CreateTask from './Pages/Task/CreateTask';
-import CreateEvent from './Pages/Calender/CreateEvent';
-import GeneralAdminMode from './Pages/General/GeneralAdminMode';
-import ActionWatiTemplate from './Pages/Template/Whatsapp Template/ActionWatiTemplate';
-import ActionInteraktTemplate from './Pages/Template/Whatsapp Template/ActionInteraktTemplate';
-import ActionWatiTemplateselect from './Pages/Template/Whatsapp Template/ActionWatiTemplateselect';
-import AddTelegaramTemplate from './Pages/Template/AddTelegaramTemplate';
-import ConnectTelegaramTemplate from './Pages/Template/ConnectTelegaramTemplate';
-import AddSMSTemplate from './Pages/Template/AddSMSTemplate';
-import ConnectSMSTemplate from './Pages/Template/ConnectSMSTemplate';
-import AddEmailTemplate from './Pages/Template/AddEmailTemplate';
 import ForgetPassword from './Pages/Login/ForgetPassword';
 import OTP from './Pages/Login/OTP';
 import NewPassword from './Pages/Login/NewPassword';
-import Nextbachgenrator from './Pages/NextBachGenerator/Nextbachgenrator';
-import HistoryPage from './Pages/History/History';
-import WhatsApp_SectionEdit from './Pages/EditProfile/WhatsApp_SectionEdit';
-import TelegramEdit from './Pages/EditProfile/TelegramEdit';
-import EmailTemplateEdit from './Pages/EditProfile/EmailTemplateEdit';
-import ZoomEdit from './Pages/EditProfile/ZoomEdit';
-import MeetingEdit from './Pages/EditProfile/MeetingEdit';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import PaymentDeteails from './Pages/PaymentNow/PaymentDeteails';
+import EasebuzzPayment from './Pages/PaymentNow/EasebuzzPayment';
+import ReferenceFormData from './Pages/Reference Form Data/ReferenceFormData';
 import PayFees from './Pages/Pay Fees/PayFees';
 import PayFeePayment from './Pages/Pay Fees/PayFeePayment';
 import StudentRequest from './Pages/Student Request/StudentRequest';
 import StudentComplaint from './Pages/Student Complaint/StudentComplaint';
 import Books from './Pages/Books/Books';
+import Profile from './Pages/Profile/Profile';
+
+
+// import Admission from './Pages/Admission/Admission';
+// import Service from './Pages/Service/Service';
+// import Backend from './Pages/Backend/Backend';
+// import PendingOnlinePayments from './Pages/Pending Online Payments/PendingOnlinePayments';
+// import PaymentReceived from './Pages/Payment Received/PaymentReceived';
+// import RefundCancel from './Pages/RefundCancel/RefundCancel';
+// import PDCSection from './Pages/PDC Section/PDCSection';
+// import ExamAttendanceStatus from './Pages/Exam Attendance Status/ExamAttendanceStatus';
+// import Results from './Pages/Results/Results';
+// import Template from './Pages/Template/Template';
+// import TelegramTemplate from './Pages/Template/TelegramTemplate';
+// import EmailTemplate from './Pages/Template/EmailTemplate';
+// import SMSTemplate from './Pages/Template/SMSTemplate';
+// import WatiTemplate from './Pages/Template/Whatsapp Template/WatiTemplate';
+// import InteraktTemplate from './Pages/Template/Whatsapp Template/InteraktTemplate';
+// import Automation from './Pages/Automation Logs/Automation';
+// import TelegramAutomation from './Pages/Automation Logs/TelegramAutomation';
+// import EmailAutomation from './Pages/Automation Logs/EmailAutomation';
+// import InteraktAutomation from './Pages/Automation Logs/InteraktAutomation';
+// import MeetingAutomation from './Pages/Automation Logs/MeetingAutomation';
+// import SMSAutomation from './Pages/Automation Logs/SMSAutomation';
+// import WatiAutomation from './Pages/Automation Logs/WatiAutomation';
+// import ZoomAutomation from './Pages/Automation Logs/ZoomAutomation';
+// import ITReport from './Pages/IT Report/ITReport';
+// import ITTargetReport from './Pages/IT Target Report/ITTargetReport';
+// import ITTargetAnalysis from './Pages/IT Target Analysis/ITTargetAnalysis';
+// import CallRecordingAnalysis from './Pages/Call Recording Analysis/CallRecordingAnalysis';
+// import SalesTarget from './Pages/Sales Target/SalesTarget';
+// import CRM from './Pages/CRM/CRM';
+// import Employees from './Pages/Employees/Employees';
+// import University from './Pages/Setting/University';
+// import Courses from './Pages/Setting/Courses';
+// import Specialization from './Pages/Setting/Specialization';
+// import Subject from './Pages/Setting/Subject';
+// import BankAccount from './Pages/Setting/BankAccount';
+// import StudyMedium from './Pages/Setting/StudyMedium';
+// import CoursefeesStructure from './Pages/Setting/CoursefeesStructure';
+// import AutoBackup from './Pages/Setting/AutoBackup';
+// import PDCFollowUpStatus from './Pages/Setting/PDCFollowUpStatus';
+// import ExpenseType from './Pages/Setting/ExpenseType';
+// import IdleTime from './Pages/Setting/IdleTime';
+// import PendingdocumentList from './Pages/Setting/PendingdocumentList';
+// import CourierSection from './Pages/Setting/CourierSection';
+// import StudentRequestType from './Pages/Setting/StudentRequestType';
+// import StudentComplaintType from './Pages/Setting/StudentComplaintType';
+// import AdmissionConfirmStatus from './Pages/Setting/AdmissionConfirmStatus';
+// import LogInHistory from './Pages/Log In History/LogInHistory';
+// import Attendee from './Pages/Attendees/Attendee';
+// import Expense from './Pages/Expense/Expense';
+// import PettyCashPayment from './Pages/PettyCash Payment/PettyCashPayment';
+// import Whatsapp from './Pages/WHATSAPP/Whatsapp';
+// import Telegram from './Pages/Telegram/Telegram';
+// import VoiceCall from './Pages/Voice Call/VoiceCall';
+// import Zoommeeting from './Pages/Zoom meeting Page/Zoommeeting';
+// import Email from './Pages/Email Page/Email';
+// import Documents from './Pages/Documents/Documents';
+// import DailyReportTemplate from './Pages/Daily Report Template/DailyReportTemplate';
+// import CallRecordingStorage from './Pages/Call Recording Storage/CallRecordingStorage';
+// import ITReportingTemplate from './Pages/IT Reporting Template/ITReportingTemplate';
+// import CompanyStructure from './Pages/Company Structure/CompanyStructure';
+// import PermissionAccess from './Pages/Permission Access/PermissionAccess';
+// import AccessPermission from './Pages/Permission Access/AccessPermission';
+// import ManagePermissionAccess from './Pages/Permission Access/ManagePermissionAccess';
+
+// import BirthdayWishes from './Pages/Setting/BirthdayWishes';
+// import WorkAnniversory from './Pages/Setting/WorkAnniversory';
+// import TelegramAPI from './Pages/Setting/TelegramAPI';
+// import EasebuzzAPI from './Pages/Setting/EasebuzzAPI';
+// import CCAvenueAPI from './Pages/Setting/CCAvenueAPI';
+// import PaytmGateway from './Pages/Setting/PaytmGateway';
+// import Keka from './Pages/Setting/Keka';
+// import WatiApi from './Pages/Setting/WatiApi';
+// import InterktAPI from './Pages/Setting/InterktAPI';
+// import KIT19 from './Pages/Setting/KIT19';
+// import PettyCashTemplate from './Pages/Setting/PettyCashTemplate';
+// import CourierSectionTemplate from './Pages/Setting/CourierSectionTemplate';
+// import Waticouriersectiontemplate from './Pages/Setting/Waticouriersectiontemplate';
+// import Intakeouriersectiontemplate from './Pages/Setting/Intakeouriersectiontemplate';
+// import PendingDocumentListTemplate from './Pages/Setting/PendingDocumentListTemplate';
+// import SettingEmailTemplate from './Pages/Setting/SettingEmailTemplate';
+// import FONADAAPI from './Pages/Setting/FONADAAPI';
+// import ERPSettings from './Pages/Setting/ERPSettings';
+// import PaymentTypeMode from './Pages/Setting/PaymentTypeMode';
+// import ForInternalpayment from './Pages/Setting/ForInternalpayment';
+// import ForPublicPayment from './Pages/Setting/ForPublicPayment';
+// import CallyzerAPI from './Pages/Setting/CallyzerAPI';
+// import FeeReceiptFormat from './Pages/Setting/FeeReceiptFormat';
+// import StudentEditTemplate from './Pages/Setting/StudentEditTemplate';
+// import InternalEditTemplate from './Pages/Setting/InternalEditTemplate';
+// import SettingEditEmailTemplate from './Pages/Setting/SettingEditEmailTemplate';
+// import PaymentNow from './Pages/PaymentNow/PaymentNow';
+
+// import General from './Pages/General/General';
+// import Task from './Pages/Task/Task';
+// import Calender from './Pages/Calender/Calender';
+// import Drive from './Pages/Drive/Drive';
+// import WorkReport from './Pages/Work Report/WorkReport';
+// import Admission_Details from './Pages/EditProfile/Admission_Details';
+// import Payment_section_Editprofile from './Pages/EditProfile/Payment_section_Editprofile';
+// import Personal_Details from './Pages/EditProfile/Personal_Details';
+// import Contact_Details from './Pages/EditProfile/Contact_Details';
+// import Guardian_Details from './Pages/EditProfile/Guardian_Details';
+// import Certificate from './Pages/EditProfile/Certificate';
+// import Education_Details from './Pages/EditProfile/Education_Details';
+// import Automatic2FeeStructure from './Pages/EditProfile/Automatic2Fee _Structure';
+// import CreateTask from './Pages/Task/CreateTask';
+// import CreateEvent from './Pages/Calender/CreateEvent';
+// import GeneralAdminMode from './Pages/General/GeneralAdminMode';
+// import ActionWatiTemplate from './Pages/Template/Whatsapp Template/ActionWatiTemplate';
+// import ActionInteraktTemplate from './Pages/Template/Whatsapp Template/ActionInteraktTemplate';
+// import ActionWatiTemplateselect from './Pages/Template/Whatsapp Template/ActionWatiTemplateselect';
+// import AddTelegaramTemplate from './Pages/Template/AddTelegaramTemplate';
+// import ConnectTelegaramTemplate from './Pages/Template/ConnectTelegaramTemplate';
+// import AddSMSTemplate from './Pages/Template/AddSMSTemplate';
+// import ConnectSMSTemplate from './Pages/Template/ConnectSMSTemplate';
+// import AddEmailTemplate from './Pages/Template/AddEmailTemplate';
+
+// import Nextbachgenrator from './Pages/NextBachGenerator/Nextbachgenrator';
+// import HistoryPage from './Pages/History/History';
+// import WhatsApp_SectionEdit from './Pages/EditProfile/WhatsApp_SectionEdit';
+// import TelegramEdit from './Pages/EditProfile/TelegramEdit';
+// import EmailTemplateEdit from './Pages/EditProfile/EmailTemplateEdit';
+// import ZoomEdit from './Pages/EditProfile/ZoomEdit';
+// import MeetingEdit from './Pages/EditProfile/MeetingEdit';
+
 // import Whatsappsection from './Pages/WHATSAPP/Whatsappsection';
 
 function App() {
@@ -150,6 +157,16 @@ function App() {
           <Route path="/otp" element={<OTP />} />
           <Route path="/newpassword" element={<NewPassword />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/paymentdetails" element={<PaymentDeteails />} />
+          <Route path="/easebuzzpayment" element={<EasebuzzPayment />} />
+          <Route path="/payfees" element={<PayFees />} />
+          <Route path="/payfeepayment" element={<PayFeePayment />} />
+          <Route path="/studentrequest" element={<StudentRequest />} />
+          <Route path="/studentcomplaint" element={<StudentComplaint />} />
+          <Route path="/books" element={<Books />} />
+          <Route path="/referenceformdata" element={<ReferenceFormData />} />
+          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admission" element={<Admission />} />
           <Route path="/service" element={<Service />} />
           <Route path="/backend" element={<Backend />} />
@@ -273,12 +290,8 @@ function App() {
           <Route path="/telegramedit" element={<TelegramEdit />} />
           <Route path="/emailtemplateedit" element={<EmailTemplateEdit />} />
           <Route path="/zoomedit" element={<ZoomEdit />} />
-          <Route path="/meetingedit" element={<MeetingEdit />} />
-          <Route path="/payfees" element={<PayFees />} />
-          <Route path="/payfeepayment" element={<PayFeePayment />} />
-          <Route path="/studentrequest" element={<StudentRequest />} />
-          <Route path="/studentcomplaint" element={<StudentComplaint />} />
-          <Route path="/books" element={<Books />} />
+          <Route path="/meetingedit" element={<MeetingEdit />} /> */}
+
         </Routes>
       </BrowserRouter>
     </>
