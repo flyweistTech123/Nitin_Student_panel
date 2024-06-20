@@ -1,8 +1,12 @@
 import React from 'react'
-import HOC from '../../Components/HOC/HOC'
 import './Profile.css'
 import { useNavigate, useLocation } from "react-router-dom";
 import img from '../../Img/img117.png'
+import { MdPersonalInjury } from "react-icons/md";
+import { MdPermContactCalendar } from "react-icons/md";
+import { BsBank2 } from "react-icons/bs";
+import { IoMdLock } from "react-icons/io";
+
 
 const Profile = () => {
     const navigate = useNavigate()
@@ -27,23 +31,37 @@ const Profile = () => {
                 <div className='profileprofile5'>
                     <div className="profileprofile6">
                         <div className='profileprofile7'>
-                            <div>
-                                
+                            <div className={location.pathname === "/personaldetails" ? "profileprofile8" : "profileprofile9"} onClick={() => navigate("/personaldetails")}>
+                                <MdPersonalInjury   />
+                            </div>
+                            <div className={location.pathname === "/personaldetails" ? "profileprofile10" : "profileprofile11"} onClick={() => navigate("/personaldetails")}>
+                                <p>Personal Details</p>
                             </div>
                         </div>
-                        <p className={location.pathname === "/admission_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/admission_details")}>Admission Details</p>
-                        <p className={location.pathname === "/payment_section" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/payment_section")}>Payment</p>
-                        <p className={location.pathname === "/personal_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/personal_details")}>Personal Details</p>
-                        <p className={location.pathname === "/automatic2feestructure" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/automatic2feestructure")}>Fee Structure</p>
-                        <p className={location.pathname === "/contact_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/contact_details")}>Contact Details</p>
-                        <p className={location.pathname === "/guardian_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/guardian_details")}>Guardian Details</p>
-                        <p className={location.pathname === "/certificate" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/certificate")}>Certificate</p>
-                        <p className={location.pathname === "/education_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/education_details")}>Educational Details</p>
-                        <p className={location.pathname === "/whatsAppsectionedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/whatsAppsectionedit")}>What’s app</p>
-                        <p className={location.pathname === "/telegramedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/telegramedit")}>Telegram</p>
-                        <p className={location.pathname === "/emailtemplateedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/emailtemplateedit")}>Email</p>
-                        <p className={location.pathname === "/zoomedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/zoomedit")}>Zoom</p>
-                        <p className={location.pathname === "/meetingedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/meetingedit")}>Meeting</p>
+                        <div className='profileprofile7'>
+                            <div className={location.pathname === "/contactdetails" ? "profileprofile8" : "profileprofile9"} onClick={() => navigate("/contactdetails")}>
+                                <MdPermContactCalendar    />
+                            </div>
+                            <div className={location.pathname === "/contactdetails" ? "profileprofile10" : "profileprofile11"} onClick={() => navigate("/contactdetails")}>
+                                <p>Contact Details</p>
+                            </div>
+                        </div>
+                        <div className='profileprofile7'>
+                            <div className={location.pathname === "/bankdetails" ? "profileprofile8" : "profileprofile9"} onClick={() => navigate("/bankdetails")}>
+                                <BsBank2    />
+                            </div>
+                            <div className={location.pathname === "/bankdetails" ? "profileprofile10" : "profileprofile11"} onClick={() => navigate("/bankdetails")}>
+                                <p>Bank Details</p>
+                            </div>
+                        </div>
+                        <div className='profileprofile7'>
+                            <div className={location.pathname === "/changepassword" ? "profileprofile8" : "profileprofile9"} onClick={() => navigate("/changepassword")}>
+                                <IoMdLock    />
+                            </div>
+                            <div className={location.pathname === "/changepassword" ? "profileprofile10" : "profileprofile11"} onClick={() => navigate("/changepassword")}>
+                                <p>Change Password</p>
+                            </div>
+                        </div>
                     </div>
                 </div >
             </div>
@@ -51,4 +69,4 @@ const Profile = () => {
     )
 }
 
-export default HOC(Profile)
+export default Profile

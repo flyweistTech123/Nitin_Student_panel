@@ -112,3 +112,58 @@
   justify-content: end;
   cursor: pointer;
 }
+
+
+
+
+
+.admission13 {
+  margin-top: 30px;
+}
+
+.admission13 .table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admission13 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admission13 table th {
+  height: 48px;
+  background-color: #2155cd;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+  /* text-align: center; */
+  cursor: pointer;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.admission13 table tr {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  position: relative;
+}
+
+.admission13 table td {
+  height: 69px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+  /* text-align: center; */
+  cursor: pointer;
+  white-space: nowrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}

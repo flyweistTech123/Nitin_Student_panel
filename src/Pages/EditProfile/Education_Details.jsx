@@ -246,7 +246,7 @@ const Education_Details = () => {
                         </div>
                     </div>
 
-                    <div className='editprofile100'>
+                    {/* <div className='editprofile100'>
                         <label htmlFor="">Documents previous boards are approved </label>
                         <div className='editprofile101' >
                             <input type="radio" />
@@ -256,7 +256,7 @@ const Education_Details = () => {
                             <input type="radio" />
                             <label htmlFor="">No</label>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

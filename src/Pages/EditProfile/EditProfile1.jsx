@@ -112,21 +112,10 @@ const EditProfile1 = () => {
                         <input type="search" placeholder='Search Here' />
                         <IoSearchSharp />
                     </div>
-
-                    <div className='editprofile5'>
-                        <div className='editprofile85'>
-                            <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
-                                <p className='editprofile85'>Create a field</p>
-                            </OverlayTrigger>
-                        </div>
-                        <button onClick={() => setModalShow4(true)}>History</button>
-                        <button onClick={() => setModalShow(true)}>Counselor Form</button>
-                    </div>
                 </div>
 
                 <div className="editprofile6">
                     <div className="editprofile7">
-                        <Slider {...settings}>
                             <p className={location.pathname === "/admission_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/admission_details")}>Admission Details</p>
                             <p className={location.pathname === "/payment_section" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/payment_section")}>Payment</p>
                             <p className={location.pathname === "/personal_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/personal_details")}>Personal Details</p>
@@ -135,12 +124,11 @@ const EditProfile1 = () => {
                             <p className={location.pathname === "/guardian_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/guardian_details")}>Guardian Details</p>
                             <p className={location.pathname === "/certificate" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/certificate")}>Certificate</p>
                             <p className={location.pathname === "/education_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/education_details")}>Educational Details</p>
-                            <p className={location.pathname === "/whatsAppsectionedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/whatsAppsectionedit")}>What’s app</p>
+                            {/* <p className={location.pathname === "/whatsAppsectionedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/whatsAppsectionedit")}>What’s app</p>
                             <p className={location.pathname === "/telegramedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/telegramedit")}>Telegram</p>
                             <p className={location.pathname === "/emailtemplateedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/emailtemplateedit")}>Email</p>
                             <p className={location.pathname === "/zoomedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/zoomedit")}>Zoom</p>
-                            <p className={location.pathname === "/meetingedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/meetingedit")}>Meeting</p>
-                        </Slider>
+                            <p className={location.pathname === "/meetingedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/meetingedit")}>Meeting</p> */}
                     </div>
                 </div>
 

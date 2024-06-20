@@ -15,8 +15,20 @@ import PayFeePayment from './Pages/Pay Fees/PayFeePayment';
 import StudentRequest from './Pages/Student Request/StudentRequest';
 import StudentComplaint from './Pages/Student Complaint/StudentComplaint';
 import Books from './Pages/Books/Books';
-import Profile from './Pages/Profile/Profile';
-
+// import Profile from './Pages/Profile/Profile';
+import Admission_Details from './Pages/EditProfile/Admission_Details';
+import Payment_section_Editprofile from './Pages/EditProfile/Payment_section_Editprofile';
+import Personal_Details from './Pages/EditProfile/Personal_Details';
+import Contact_Details from './Pages/EditProfile/Contact_Details';
+import Guardian_Details from './Pages/EditProfile/Guardian_Details';
+import Certificate from './Pages/EditProfile/Certificate';
+import Education_Details from './Pages/EditProfile/Education_Details';
+import Automatic2FeeStructure from './Pages/EditProfile/Automatic2Fee _Structure';
+import PersonalDetails from './Pages/Profile/PersonalDetails';
+import ContactDetails from './Pages/Profile/ContactDetails';
+import BankDetails from './Pages/Profile/BankDetails';
+import ChangePassword from './Pages/Profile/ChangePassword';
+import StudentRequestDetails from './Pages/Student Request/StudentRequestDetails';
 
 // import Admission from './Pages/Admission/Admission';
 // import Service from './Pages/Service/Service';
@@ -115,14 +127,7 @@ import Profile from './Pages/Profile/Profile';
 // import Calender from './Pages/Calender/Calender';
 // import Drive from './Pages/Drive/Drive';
 // import WorkReport from './Pages/Work Report/WorkReport';
-// import Admission_Details from './Pages/EditProfile/Admission_Details';
-// import Payment_section_Editprofile from './Pages/EditProfile/Payment_section_Editprofile';
-// import Personal_Details from './Pages/EditProfile/Personal_Details';
-// import Contact_Details from './Pages/EditProfile/Contact_Details';
-// import Guardian_Details from './Pages/EditProfile/Guardian_Details';
-// import Certificate from './Pages/EditProfile/Certificate';
-// import Education_Details from './Pages/EditProfile/Education_Details';
-// import Automatic2FeeStructure from './Pages/EditProfile/Automatic2Fee _Structure';
+
 // import CreateTask from './Pages/Task/CreateTask';
 // import CreateEvent from './Pages/Calender/CreateEvent';
 // import GeneralAdminMode from './Pages/General/GeneralAdminMode';
@@ -165,7 +170,20 @@ function App() {
           <Route path="/studentcomplaint" element={<StudentComplaint />} />
           <Route path="/books" element={<Books />} />
           <Route path="/referenceformdata" element={<ReferenceFormData />} />
-          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
+          <Route path="/admission_details" element={<Admission_Details />} />
+          <Route path="/payment_section" element={<Payment_section_Editprofile />} />
+          <Route path="/personal_details" element={<Personal_Details />} />
+          <Route path="/contact_details" element={<Contact_Details />} />
+          <Route path="/guardian_details" element={<Guardian_Details />} />
+          <Route path="/certificate" element={<Certificate />} />
+          <Route path="/education_details" element={<Education_Details />} />
+          <Route path="/automatic2feestructure" element={<Automatic2FeeStructure />} />
+          <Route path="/personaldetails" element={<PersonalDetails />} />
+          <Route path="/contactdetails" element={<ContactDetails />} />
+          <Route path="/bankdetails" element={<BankDetails />} />
+          <Route path="/changepassword" element={<ChangePassword />} />
+          <Route path="/studentrequestdetails" element={<StudentRequestDetails />} />
           {/* <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admission" element={<Admission />} />
           <Route path="/service" element={<Service />} />
@@ -265,14 +283,7 @@ function App() {
           <Route path="/calender" element={<Calender />} />
           <Route path="/drive" element={<Drive />} />
           <Route path="/workreport" element={<WorkReport />} />
-          <Route path="/admission_details" element={<Admission_Details />} />
-          <Route path="/payment_section" element={<Payment_section_Editprofile />} />
-          <Route path="/personal_details" element={<Personal_Details />} />
-          <Route path="/contact_details" element={<Contact_Details />} />
-          <Route path="/guardian_details" element={<Guardian_Details />} />
-          <Route path="/certificate" element={<Certificate />} />
-          <Route path="/education_details" element={<Education_Details />} />
-          <Route path="/automatic2feestructure" element={<Automatic2FeeStructure />} />
+    
           <Route path="/createtask" element={<CreateTask />} />
           <Route path="/createevent" element={<CreateEvent />} />
           <Route path="/generalAdminMode" element={<GeneralAdminMode />} />

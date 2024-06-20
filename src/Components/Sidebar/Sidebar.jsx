@@ -73,7 +73,7 @@ const Sidebar = () => {
                                 <p>Dashboard</p>
                             </div>
                         </Link>
-                        <Link to={'/crm'} className='link'>
+                        <Link to={'/admission_details'} className='link'>
                             <div className='sidebar2'>
                                 <FaWpforms color='#3F3F3F' size={18} />
                                 <p>Admission Form</p>
@@ -97,7 +97,7 @@ const Sidebar = () => {
                                     <Link to={'/payfees'} className='link'>
                                         <li>Pay Fees</li>
                                     </Link>
-                                    <Link to={'/backend'} className='link'>
+                                    <Link to={'/payment_section'} className='link'>
                                         <li>Student fees receipt</li>
                                     </Link>
                                 </ul>

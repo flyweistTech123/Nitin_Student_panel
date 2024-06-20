@@ -452,7 +452,7 @@ const Navbar = () => {
                     <div class='profile-img1' onClick={() => setModalShow2(true)}>
                         <img src={img1} alt="" />
                     </div>
-                    <div class='profile-img' onClick={()=>navigate('/profile')}>
+                    <div class='profile-img' onClick={()=>navigate('/personaldetails')}>
                         <img src={img2} alt="" />
                     </div>
                 </div>

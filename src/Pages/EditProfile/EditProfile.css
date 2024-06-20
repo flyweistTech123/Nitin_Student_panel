@@ -115,7 +115,7 @@
   background-color: #FFFFFF;
   box-shadow: 0px 0px 4px 0px #00000040;
   border-radius: 11px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 20px;
@@ -131,8 +131,8 @@
   line-height: 20px;
   color: #2155cd;
   margin: 0;
-  /* border-bottom: 2px solid #2155cd; */
-  text-decoration: underline;
+  border-bottom: 2px solid #2155cd;
+  /* text-decoration: underline; */
 }
 
 .editprofile9 {
@@ -1218,7 +1218,7 @@
   width: auto;
   height: auto;
   padding: 12px 51px 12px 51px;
-  background-color: #ffb800;
+  background-color: rgb(1, 148, 1);
   border-radius: 4px;
 }
 
@@ -1515,4 +1515,11 @@
 
 .editprofile110 {
   margin-top: 50px;
+}
+
+
+.editprofile111{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }

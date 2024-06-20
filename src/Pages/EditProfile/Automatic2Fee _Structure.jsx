@@ -3,7 +3,7 @@ import './EditProfile.css'
 import { useNavigate } from "react-router-dom";
 import EditProfile from './EditProfile';
 
-import { IoMdEye } from "react-icons/io";
+import { IoSettings } from "react-icons/io5";
 
 
 import {
@@ -16,6 +16,48 @@ const Automatic2FeeStructure = () => {
 
     // add fee structure Modal 
     const [modalShow, setModalShow] = React.useState(false);
+
+    const [show, setShow] = useState(false)
+    const [show1, setShow1] = useState(false)
+
+    const handleShow = () => {
+        setShow(false)
+        setShow1(true)
+    }
+
+    const handleShow1 = () => {
+        setShow(true)
+        setShow1(false)
+    }
+
+    const tableData = [
+        {
+            id: 1,
+            BookFee: '₹1000',
+        },
+
+        {
+            id: 1,
+            BookFee: '₹1000',
+        },
+        {
+            id: 1,
+            BookFee: '₹1000',
+        },
+        {
+            id: 1,
+            BookFee: '₹1000',
+        },
+        {
+            id: 1,
+            BookFee: '₹1000',
+        },
+        {
+            id: 1,
+            BookFee: '₹1000',
+        },
+
+    ];
 
     return (
         <>
@@ -58,11 +100,12 @@ const Automatic2FeeStructure = () => {
 
                     {step === 1 ? (
                         <div className='editprofile73'>
+
                             <div className="editprofile81">
-                                <div className={step === 7 ? "editprofile82" : "editprofile83"} onClick={() => setStep(7)}>
+                                <div className='editprofile82' onClick={handleShow1}>
                                     <p>Manual</p>
                                 </div>
-                                <div className={step === 8 ? "editprofile82" : "editprofile83"} onClick={() => setStep(8)}>
+                                <div className='editprofile83' onClick={handleShow}>
                                     <p>Automation</p>
                                 </div>
                             </div>
@@ -73,130 +116,332 @@ const Automatic2FeeStructure = () => {
                                     <input type="date" />
                                 </div>
                             </div>
-                            <div className='editprofile78'>
-                                <div className='editprofile76'>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Book Fee</label>
-                                        <input type="text" />
+
+                            {show &&
+
+                                <div>
+                                    <div className='editprofile74'>
+                                        <h6>Manual</h6>
                                     </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Course Fee</label>
-                                        <input type="text" />
+                                    <div className='editprofile75'>
+                                        <h6>Exam Batch  -  Month / Year</h6>
                                     </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">GST</label>
-                                        <input type="text" />
+                                    <div className='editprofile78'>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Course Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">GST</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Other</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Reg.</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">TOC</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">LE</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Multiple</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile79'>
+                                                <label htmlFor="">Total =</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Other</label>
-                                        <input type="text" />
+
+                                    <div className='editprofile80'>
+                                        <button>SAVE</button>
                                     </div>
                                 </div>
-                                <div className='editprofile76'>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Reg.</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">TOC</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Book</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">LE</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                                <div className='editprofile76'>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Multiple</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile79'>
-                                        <label htmlFor="">Total =</label>
-                                        <input type="text" />
-                                    </div>
-                                </div>
-                            </div>
+                            }
 
 
-                            <div className='editprofile80'>
-                                <button>SAVE</button>
-                            </div>
+
+                            {show1 &&
+
+                                <div>
+                                    <div className='editprofile74'>
+                                        <h6>Automation</h6>
+                                    </div>
+                                    <div className='editprofile75'>
+                                        <h6>Exam Batch  -  Month / Year</h6>
+                                    </div>
+                                    <div className='editprofile78'>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Course Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">GST</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Other</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Reg.</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">TOC</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">LE</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Multiple</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile79'>
+                                                <label htmlFor="">Total =</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='editprofile80'>
+                                        <button>SAVE</button>
+                                    </div>
+                                </div>
+                            }
 
                         </div>
 
                     ) : step === 0 ? (
                         <div className='editprofile73'>
 
-                            <div className='editprofile74'>
-                                <h6>Manual</h6>
-                            </div>
-
-                            <div className='editprofile75'>
-                                <h6>Exam Batch  -  Month / Year</h6>
-                            </div>
-                            <div className='editprofile78'>
-                                <div className='editprofile76'>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Book Fee</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Course Fee</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">GST</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Other</label>
-                                        <input type="text" />
-                                    </div>
+                            <div className="editprofile81">
+                                <div className='editprofile82' onClick={handleShow1}>
+                                    <p>Manual</p>
                                 </div>
-                                <div className='editprofile76'>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Reg.</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">TOC</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Book</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">LE</label>
-                                        <input type="text" />
-                                    </div>
+                                <div className='editprofile83' onClick={handleShow}>
+                                    <p>Automation</p>
                                 </div>
-                                <div className='editprofile76'>
-                                    <div className='editprofile77'>
-                                        <label htmlFor="">Multiple</label>
-                                        <input type="text" />
-                                    </div>
-                                    <div className='editprofile79'>
-                                        <label htmlFor="">Total =</label>
-                                        <input type="text" />
-                                    </div>
+                            </div>
+                            <div className='editprofile84'>
+                                <h6>Enter Exam Batch  - </h6>
+                                <div className='editprofile77'>
+                                    <label htmlFor="">Exam Batch</label>
+                                    <input type="date" />
                                 </div>
                             </div>
 
+                            {show &&
 
-                            <div className='editprofile80'>
-                                <button>SAVE</button>
-                            </div>
+                                <div>
+                                    <div className='editprofile74'>
+                                        <h6>Manual</h6>
+                                    </div>
+                                    <div className='editprofile75'>
+                                        <h6>Exam Batch  -  Month / Year</h6>
+                                    </div>
+                                    <div className='editprofile78'>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Course Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">GST</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Other</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Reg.</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">TOC</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">LE</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Multiple</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile79'>
+                                                <label htmlFor="">Total =</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='editprofile80'>
+                                        <button>SAVE</button>
+                                    </div>
+                                </div>
+                            }
+
+
+
+                            {show1 &&
+
+                                <div>
+                                    <div className='editprofile74'>
+                                        <h6>Automation</h6>
+                                    </div>
+                                    <div className='editprofile75'>
+                                        <h6>Exam Batch  -  Month / Year</h6>
+                                    </div>
+                                    <div className='editprofile78'>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Course Fee</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">GST</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Other</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Reg.</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">TOC</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Book</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">LE</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                        <div className='editprofile76'>
+                                            <div className='editprofile77'>
+                                                <label htmlFor="">Multiple</label>
+                                                <input type="text" />
+                                            </div>
+                                            <div className='editprofile79'>
+                                                <label htmlFor="">Total =</label>
+                                                <input type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='editprofile80'>
+                                        <button>SAVE</button>
+                                    </div>
+                                </div>
+                            }
+
+
+
+
 
                         </div>
                     ) : (
                         ""
                     )}
+                    <div className='admission13'>
+                        <div className='table-container'>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Book Fee</th>
+                                        <th>Course fee</th>
+                                        <th>GST</th>
+                                        <th>Other</th>
+                                        <th>Reg.</th>
+                                        <th>TOC</th>
+                                        <th>Book</th>
+                                        <th>LE</th>
+                                        <th>Multiple</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {tableData.map((data) => (
+                                        <tr key={data.id}>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                            <td>{data.BookFee}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

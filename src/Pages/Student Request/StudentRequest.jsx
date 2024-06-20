@@ -5,9 +5,11 @@ import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { IoIosArrowDown } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 
 const StudentRequest = () => {
+    const navigate = useNavigate()
     const tableData = [
         {
             id: 1,
@@ -108,7 +110,7 @@ const StudentRequest = () => {
                                         <td>{data.Title}</td>
                                         <td>{data.Status}</td>
                                         <td className='studentrequest1'>
-                                            <button>Details</button>
+                                            <button onClick={()=>navigate('/studentrequestdetails')}>Details</button>
                                         </td>
                                     </tr>
                                 ))}

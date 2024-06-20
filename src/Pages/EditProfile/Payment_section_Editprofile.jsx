@@ -175,10 +175,10 @@ const Payment_section_Editprofile = () => {
                                     <p>Received Amount</p>
                                     <p>₹21,500</p>
                                 </div>
-                                <div className='editprofile33'>
+                                {/* <div className='editprofile33'>
                                     <p>Refund Amount</p>
                                     <p>₹0</p>
-                                </div>
+                                </div> */}
                                 <div className='editprofile33'>
                                     <p>Balance</p>
                                     <p>₹0</p>
@@ -206,7 +206,7 @@ const Payment_section_Editprofile = () => {
                                         <th>Remark</th>
                                         <th>Status</th>
                                         <th>Student Receipt</th>
-                                        <th>Internal Receipt</th>
+                                        {/* <th>Internal Receipt</th> */}
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -229,9 +229,9 @@ const Payment_section_Editprofile = () => {
                                             <td>
                                                 <LuDownload color='#2155CD' size={20} />
                                             </td>
-                                            <td>
+                                            {/* <td>
                                                 <LuDownload color='#2155CD' size={20} />
-                                            </td>
+                                            </td> */}
                                         </tr>
                                     ))}
                                 </tbody>
