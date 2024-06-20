@@ -18,17 +18,30 @@
 
 /* Student Request Details css */
 
-.studentrequestdetails {
+.studentrequestdetailscontainer {
+  position: relative;
 }
 
+.studentrequestdetails {
+  display: flex;
+  gap: 50px;
+  margin-top: 120px;
+}
+.studentrequestdetails1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .studentrequestdetails3 {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .studentrequestdetails4 {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .studentrequestdetails4 p {
@@ -50,11 +63,17 @@
 }
 
 .studentrequestdetails6 {
-  width: 570px;
-  height: 134px;
+  width: auto;
+  height: auto;
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0px 4px 10px 4px #0000001a;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.studentrequestdetails6:hover {
+  background: #2155cd33;
 }
 
 .studentrequestdetails6 p {
@@ -64,38 +83,172 @@
   line-height: 20px;
   color: #000000;
   margin: 0;
+  opacity: 0.6;
+  padding-bottom: 50px;
 }
 
 .studentrequestdetails8 {
-  width: 361px;
+  width: 300px;
   height: 278px;
   background: #ffffff;
+  padding: 20px;
 }
 
 .studentrequestdetails9 {
-    border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  text-align: center;
+  padding: 10px;
 }
 
 .studentrequestdetails9 h6 {
   font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 20px;
   color: #000000;
   margin: 0;
 }
 
-
-.studentrequestdetails11{
-    display: flex;
-    align-items: center;
+.studentrequestdetails10 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.studentrequestdetails11 p{
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    margin: 0;
+.studentrequestdetails11 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.studentrequestdetails11 p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.studentrequestdetails11 span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.studentrequestdetails12 {
+  margin-top: 100px;
+}
+
+.studentrequestdetails13 {
+  width: 100%;
+  height: 526px;
+  background-color: #2155cd;
+  padding: 30px;
+}
+
+.studentrequestdetails14 {
+  width: 100%;
+  height: 215px;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.studentrequestdetails14 textarea {
+  border: none;
+  width: 100%;
+  height: 70%;
+  outline: none;
+  padding-left: 30px;
+}
+
+.studentrequestdetails15 {
+  text-align: end;
+}
+
+.studentrequestdetails15 button {
+  width: 218px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #2155cd;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.studentrequestdetails16 {
+  width: 100%;
+  height: 140px;
+  border-radius: 9px;
+  background: #ffffff66;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.studentrequestdetails17 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.studentrequestdetails17 h6 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.studentrequestdetails17 button {
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #d9d9d9;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000b2;
+  margin: 0;
+}
+
+.studentrequestdetails19 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.studentrequestdetails19 p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #3f3f3f;
+  margin: 0;
+}
+
+
+.studentrequestdetails20{
+    text-align: end;
+    cursor: pointer;
 }

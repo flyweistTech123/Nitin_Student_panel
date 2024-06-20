@@ -1,11 +1,11 @@
 import React from 'react'
 import HOC from '../../Components/HOC/HOC'
-import './StudentRequest.css'
+import './StudentComplaint.css'
 import img from '../../Img/img83.png'
 import { LuUpload } from "react-icons/lu";
 
 
-const StudentRequestDetails = () => {
+const StudentComplaintDetails = () => {
 
 
     return (
@@ -95,4 +95,4 @@ const StudentRequestDetails = () => {
     )
 }
 
-export default HOC(StudentRequestDetails)
+export default HOC(StudentComplaintDetails)

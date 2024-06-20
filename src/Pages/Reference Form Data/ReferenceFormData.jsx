@@ -6,7 +6,7 @@ import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { IoCloseSharp } from "react-icons/io5";
 
-import {DeleteRequest} from '../Modals/Modals'
+import { DeleteRequest } from '../Modals/Modals'
 
 
 const ReferenceFormData = () => {
@@ -196,38 +196,45 @@ const ReferenceFormData = () => {
                     </div>
 
                     <div className='payfeepayfee11'>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Candidate Name</th>
-                                    <th>Mobile No.</th>
-                                    <th>Email ID</th>
-                                    <th>Country</th>
-                                    <th>State</th>
-                                    <th>City</th>
-                                    <th>Remarks</th>
-                                    <th>Course</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {tableData.map((data) => (
-                                    <tr key={data.id}>
-                                        <td>{data.CandidateName}</td>
-                                        <td>{data.MobileNo}</td>
-                                        <td>{data.EmailID}</td>
-                                        <td>{data.Country}</td>
-                                        <td>{data.State}</td>
-                                        <td>{data.City}</td>
-                                        <td>{data.Remarks}</td>
-                                        <td>{data.Course}</td>
-                                        <td className='referenceformdata1'>
-                                            <p>In Process</p>
-                                        </td>
+                        <div className='table-container'>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Candidate Name</th>
+                                        <th>Mobile No.</th>
+                                        <th>Email ID</th>
+                                        <th>Country</th>
+                                        <th>State</th>
+                                        <th>City</th>
+                                        <th>Remarks</th>
+                                        <th>Course</th>
+                                        <th>Status</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {tableData.map((data) => (
+                                        <tr key={data.id}>
+                                            <td>
+                                                <div className='editprofile111'>
+                                                    <input type="checkbox" />
+                                                    {data.CandidateName}
+                                                </div>
+                                            </td>
+                                            <td>{data.MobileNo}</td>
+                                            <td>{data.EmailID}</td>
+                                            <td>{data.Country}</td>
+                                            <td>{data.State}</td>
+                                            <td>{data.City}</td>
+                                            <td>{data.Remarks}</td>
+                                            <td>{data.Course}</td>
+                                            <td className='referenceformdata1'>
+                                                <p>In Process</p>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div className='pendingpayment6'>

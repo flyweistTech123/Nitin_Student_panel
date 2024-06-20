@@ -46,7 +46,7 @@ const Contact_Details = () => {
                                     <div className='editprofile43'>
 
                                     </div>
-                                    <div className='editprofile43'>
+                                    <div className='editprofile43' style={{marginTop:"45px"}}>
                                         <p>Alternate Email ID</p>
                                         <h6>Loreepsom@gmail.com</h6>
                                     </div>

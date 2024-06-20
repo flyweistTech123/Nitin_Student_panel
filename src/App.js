@@ -29,6 +29,7 @@ import ContactDetails from './Pages/Profile/ContactDetails';
 import BankDetails from './Pages/Profile/BankDetails';
 import ChangePassword from './Pages/Profile/ChangePassword';
 import StudentRequestDetails from './Pages/Student Request/StudentRequestDetails';
+import StudentComplaintDetails from './Pages/Student Complaint/StudentComplaintDetails';
 
 // import Admission from './Pages/Admission/Admission';
 // import Service from './Pages/Service/Service';
@@ -184,6 +185,7 @@ function App() {
           <Route path="/bankdetails" element={<BankDetails />} />
           <Route path="/changepassword" element={<ChangePassword />} />
           <Route path="/studentrequestdetails" element={<StudentRequestDetails />} />
+          <Route path="/studentcomplaintdetails" element={<StudentComplaintDetails />} />
           {/* <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/admission" element={<Admission />} />
           <Route path="/service" element={<Service />} />

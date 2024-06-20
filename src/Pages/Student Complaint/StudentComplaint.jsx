@@ -4,10 +4,12 @@ import './StudentComplaint.css'
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { IoIosArrowDown } from "react-icons/io";
-import { IoCloseSharp } from "react-icons/io5";
-
+import { IoCloseCircleOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
+import img from '../../Img/img119.png'
 
 const StudentComplaint = () => {
+    const navigate = useNavigate()
     const tableData = [
         {
             id: 1,
@@ -41,9 +43,12 @@ const StudentComplaint = () => {
             >
                 <Modal.Body >
                     <div className='newpaymentrequest1'>
-                        <div className='newpaymentrequest2'>
+                        <div className='studentrequestdetails20'>
+                            <IoCloseCircleOutline size={30} color='#000000' onClick={() => setModalShow(false)} />
+                        </div>
+                        <div className='studentrequestdetails19'>
+                            <img src={img} alt="" />
                             <p>Start a Complaint Request</p>
-                            <IoCloseSharp size={20} color='#000000' onClick={() => setModalShow(false)} />
                         </div>
 
                         <div className='newpaymentrequest3'>
@@ -109,7 +114,7 @@ const StudentComplaint = () => {
                                         <td>{data.Title}</td>
                                         <td>{data.Status}</td>
                                         <td className='studentrequest1'>
-                                            <button>Details</button>
+                                            <button onClick={() => navigate('/studentcomplaintdetails')}>Details</button>
                                         </td>
                                     </tr>
                                 ))}

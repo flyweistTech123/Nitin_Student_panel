@@ -116,15 +116,15 @@ const EditProfile1 = () => {
 
                 <div className="editprofile6">
                     <div className="editprofile7">
-                            <p className={location.pathname === "/admission_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/admission_details")}>Admission Details</p>
-                            <p className={location.pathname === "/payment_section" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/payment_section")}>Payment</p>
-                            <p className={location.pathname === "/personal_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/personal_details")}>Personal Details</p>
-                            <p className={location.pathname === "/automatic2feestructure" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/automatic2feestructure")}>Fee Structure</p>
-                            <p className={location.pathname === "/contact_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/contact_details")}>Contact Details</p>
-                            <p className={location.pathname === "/guardian_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/guardian_details")}>Guardian Details</p>
-                            <p className={location.pathname === "/certificate" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/certificate")}>Certificate</p>
-                            <p className={location.pathname === "/education_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/education_details")}>Educational Details</p>
-                            {/* <p className={location.pathname === "/whatsAppsectionedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/whatsAppsectionedit")}>What’s app</p>
+                        <p className={location.pathname === "/admission_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/admission_details")}>Admission Details</p>
+                        <p className={location.pathname === "/payment_section" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/payment_section")}>Payment</p>
+                        <p className={location.pathname === "/personal_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/personal_details")}>Personal Details</p>
+                        <p className={location.pathname === "/automatic2feestructure" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/automatic2feestructure")}>Fee Structure</p>
+                        <p className={location.pathname === "/contact_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/contact_details")}>Contact Details</p>
+                        <p className={location.pathname === "/guardian_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/guardian_details")}>Guardian Details</p>
+                        <p className={location.pathname === "/certificate" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/certificate")}>Certificate</p>
+                        <p className={location.pathname === "/education_details" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/education_details")}>Educational Details</p>
+                        {/* <p className={location.pathname === "/whatsAppsectionedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/whatsAppsectionedit")}>What’s app</p>
                             <p className={location.pathname === "/telegramedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/telegramedit")}>Telegram</p>
                             <p className={location.pathname === "/emailtemplateedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/emailtemplateedit")}>Email</p>
                             <p className={location.pathname === "/zoomedit" ? "editprofile8" : "editprofile9"} onClick={() => navigate("/zoomedit")}>Zoom</p>
@@ -166,8 +166,8 @@ const EditProfile1 = () => {
 
                                 <div className='editprofile19'>
                                     <div className='editprofile18'>
-                                        <p>Email</p>
-                                        <h6>lorenepsom@gmail.com</h6>
+                                        <p>Phone</p>
+                                        <h6>+91 868686868</h6>
                                     </div>
                                     <div className='editprofile18'>
                                         <p>Admission Date</p>

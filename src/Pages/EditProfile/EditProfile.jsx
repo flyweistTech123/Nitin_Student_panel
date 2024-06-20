@@ -608,8 +608,8 @@ const EditProfile = () => {
 
                                 <div className='editprofile19'>
                                     <div className='editprofile18'>
-                                        <p>Email</p>
-                                        <h6>lorenepsom@gmail.com</h6>
+                                        <p>Phone</p>
+                                        <h6>+91 868686868</h6>
                                     </div>
                                     <div className='editprofile18'>
                                         <p>Admission Date</p>

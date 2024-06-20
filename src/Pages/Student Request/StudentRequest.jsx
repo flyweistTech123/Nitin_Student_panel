@@ -4,9 +4,9 @@ import './StudentRequest.css'
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { IoIosArrowDown } from "react-icons/io";
-import { IoCloseSharp } from "react-icons/io5";
+import { IoCloseCircleOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
-
+import img from '../../Img/img118.png'
 
 const StudentRequest = () => {
     const navigate = useNavigate()
@@ -43,11 +43,13 @@ const StudentRequest = () => {
             >
                 <Modal.Body >
                     <div className='newpaymentrequest1'>
-                        <div className='newpaymentrequest2'>
-                            <p>Start a Support Request</p>
-                            <IoCloseSharp size={20} color='#000000' onClick={() => setModalShow(false)} />
+                        <div className='studentrequestdetails20'>
+                            <IoCloseCircleOutline  size={30} color='#000000' onClick={() => setModalShow(false)} />
                         </div>
-
+                        <div className='studentrequestdetails19'>
+                            <img src={img} alt="" />
+                            <p>Start a Support Request</p>
+                        </div>
                         <div className='newpaymentrequest3'>
                             <div className='newpaymentrequest4'>
                                 <label htmlFor="">Add Title</label>
@@ -110,7 +112,7 @@ const StudentRequest = () => {
                                         <td>{data.Title}</td>
                                         <td>{data.Status}</td>
                                         <td className='studentrequest1'>
-                                            <button onClick={()=>navigate('/studentrequestdetails')}>Details</button>
+                                            <button onClick={() => navigate('/studentrequestdetails')}>Details</button>
                                         </td>
                                     </tr>
                                 ))}

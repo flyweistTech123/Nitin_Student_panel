@@ -187,14 +187,14 @@ const Payment_section_Editprofile = () => {
                         </div>
                     </div>
 
-                    <div className='editprofile34'>
+                    {/* <div className='editprofile34'>
                         <div className='editprofile35'>
                             <h6>Check Refund/Cancel Request</h6>
                         </div>
                         <div className='editprofile36'>
                             <button onClick={() => setModalShow(true)}>See Request</button>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='admission13'>
                         <div className='table-container'>
                             <table>

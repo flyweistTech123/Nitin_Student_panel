@@ -176,7 +176,7 @@ const Automatic2FeeStructure = () => {
                                     </div>
 
                                     <div className='editprofile80'>
-                                        <button>SAVE</button>
+                                        <button>Add</button>
                                     </div>
                                 </div>
                             }
@@ -242,7 +242,7 @@ const Automatic2FeeStructure = () => {
                                     </div>
 
                                     <div className='editprofile80'>
-                                        <button>SAVE</button>
+                                        <button>Add</button>
                                     </div>
                                 </div>
                             }
@@ -327,7 +327,7 @@ const Automatic2FeeStructure = () => {
                                     </div>
 
                                     <div className='editprofile80'>
-                                        <button>SAVE</button>
+                                        <button>Add</button>
                                     </div>
                                 </div>
                             }
@@ -393,7 +393,7 @@ const Automatic2FeeStructure = () => {
                                     </div>
 
                                     <div className='editprofile80'>
-                                        <button>SAVE</button>
+                                        <button>Add</button>
                                     </div>
                                 </div>
                             }
